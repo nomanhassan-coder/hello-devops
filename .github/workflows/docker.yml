@@ -21,8 +21,8 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-devops:latest .
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/hello-devops-app:latest .
 
     - name: Push Docker Image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/hello-devops:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/hello-devops-app:latest
